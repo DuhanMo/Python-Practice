@@ -1,3 +1,4 @@
+import linkedlist.DoubleLinkedList;
 import linkedlist.SingleLinkedList;
 
 public class Run {
@@ -32,5 +33,19 @@ public class Run {
         mySingleLinkedList.addNode(4);
         mySingleLinkedList.delNode(20);
         mySingleLinkedList.printAll();
+
+        System.out.println("=====DoubleLinkedList=====");
+        DoubleLinkedList<Integer> myDoubleLinked = new DoubleLinkedList<>();
+        myDoubleLinked.addNode(1);
+        myDoubleLinked.addNode(2);
+        myDoubleLinked.addNode(3);
+        myDoubleLinked.addNode(4);
+        myDoubleLinked.addNode(5);
+        myDoubleLinked.addNode(6);
+        myDoubleLinked.addNode(7);
+        myDoubleLinked.insertToFront(3, 10);
+        myDoubleLinked.insertToFront(1, 0);
+        myDoubleLinked.printAll();
+
     }
 }
